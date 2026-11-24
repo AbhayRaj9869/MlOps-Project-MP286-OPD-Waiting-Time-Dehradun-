@@ -1,0 +1,53 @@
+group_id: G197
+problem_id: MP286
+data_issues:
+  leaking_column:
+    present: true
+    column: token_called_after_min
+  unit_mixup:
+    present: true
+    column: avg_consult_min
+    group_value: Annexe
+    factor: 60
+  sentinel_value:
+    present: true
+    column: arrival_hour
+    value: -999
+    count: 30
+  duplicate_rows:
+    present: false
+    count: null
+  stuck_sensor:
+    present: true
+    column: lab_tests_pending
+    start_date: '2026-03-14'
+    end_date: '2026-04-06'
+  target_typos:
+    present: false
+    count: null
+  spelling_variants:
+    present: true
+    column: department
+    true_levels: 3
+tracking:
+  experiment_name: MP286_OPD_Wait_Time
+  best_run_id: ae427969bfcf4eb8b7c050abfbf66ca3
+  registered_model_name: mp286-wait-model
+  champion_version: 2
+monitoring:
+  psi:
+    patients_ahead: 5.333847125792813
+    doctors_on_duty: 0.028317883497240796
+    arrival_hour: 0.042466863464731754
+    avg_consult_min: 0.02162594034493698
+    lab_tests_pending: 0.17066473498876258
+    distance_km: 0.03801443706855583
+  most_drifted_feature: patients_ahead
+  mae_by_group:
+    Old Wing: 13.954895007618376
+    New Wing: 17.785601936455063
+    Annexe: 49.44088373966244
+  worst_served_group: Annexe
+  mae_v1_on_check: 20.89221584691481
+  mae_v2_on_check: 11.170703364562746
+  decision: promote

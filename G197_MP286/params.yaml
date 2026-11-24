@@ -1,0 +1,14 @@
+data:
+  raw_dir: data/raw
+  train: data/raw/train.csv
+  later: data/raw/later.csv
+  holdout: data/raw/holdout_features.csv
+  cleaned_dir: data/cleaned
+model:
+  random_state: 42
+  n_estimators: 350
+  max_depth: 8
+  min_samples_leaf: 2
+monitoring:
+  bins: 10
+  promotion_threshold: 0.05
