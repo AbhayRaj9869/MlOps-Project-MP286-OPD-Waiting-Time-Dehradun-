@@ -20,3 +20,4 @@ monitoring:
   decision: promote
   most_drifted_feature: patients_ahead
   worst_served_group: Annexe
+# this is the result
