@@ -34,4 +34,3 @@ def save_model(model, path: str | Path):
 
 def load_model(path: str | Path): return joblib.load(path)
 
-# trained 
